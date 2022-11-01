@@ -397,7 +397,7 @@ SELECT
 FROM  no_neg_from
 WHERE num_nft_trs_per_tx = 0
 AND neg_check >= 0
-AND num_outs > 0
+-- AND num_outs > 0
 AND net_flows > 10e10
 AND num_null_check = 0
 AND sum_amm_check = 0
@@ -432,3 +432,4 @@ AND acct_address != '0x030ba81f1c18d280636f32af80b9aad02cf0854e' -- AAVE Trackin
 -- AND transaction_hash = '0xa2044980f7880454a770db3e725596975ed6be26ef390b306dbc9d6a6a7c9ebe' 0x07fe92794bf5a8af4d2523d390bb5c2e1ed856e5e14ca394d6d50f076002a1d1
 -- GROUP BY acct_address
 ORDER BY net_flows
+
